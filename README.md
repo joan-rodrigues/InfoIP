@@ -9,10 +9,11 @@ InfoIP is GNU / Linux software developed entirely in Python. With it you can get
 
 ## Installation
 
-To do the installation just run this command in the terminal:
+To install, simply run these commands on the terminal:
 
 ~~~
 pip install -r requirements.txt
+chmod +x infoip.py
 ~~~
 
 And then just run the program with this:
