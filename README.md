@@ -24,6 +24,18 @@ And then just run the program with this:
 
 ## Screenshots
 
+![Image](src/screen01.png)
+
+EN-US:
+
+![Image](src/screen02.png)
+![Image](src/screen03.png)
+
+PT-BR:
+
+![Image](src/screen04.png)
+![Image](src/screen05.png)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
