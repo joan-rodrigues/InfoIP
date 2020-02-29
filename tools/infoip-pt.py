@@ -14,26 +14,33 @@ def main():
 |            | |  | | | | |  _| | (_) |  | |  |  __/                |
 |           |___| |_| |_| |_|    \___/  |___| |_|                   |
 |                                                                   |
-|                  Bem-vindo ao InfoIP - v1.0.0                     |
+|                  Bem-vindo ao InfoIP - v2.0.0                     |
 |                                                                   |
-|      Developed by: Joan Rodrigues - Language Python - 2019        |
+|      Developed by: Joan Rodrigues - Language Python - 2020        |
 |                                                                   |
 |  E-mail: joanrodrigues0611@gmail.com - Telegram: @joan_rodrigues  |
 |                                                                   |
-|     Instagram: @joan.dev - Facebook: fb.com/joan-rodrigues        |
+|     Instagram: @joan.dev - Facebook: fb.com/joanrodrigue0611      |
 |                                                                   |
-|                 GitHub: github.com/joan-rodrigues                 |
+|               GitHub: github.com/joan-rodrigues                   |
 |                                                                   |
 |                                                     Deus é Fiel...|
 *-------------------------------------------------------------------*
 \033[m''')
-    ip_address = input('\n\033[1mDigite um endereço de IP e pressione <ENTER>:\033[m ')
-
+    ip_address = input('\n\033[1mDigite um endereço IP e pressione <ENTER>:\033[m ')
     access_token = 'd62fceaae70fb9'
+    
     print('\n\033[1mDescobrindo informações sobre o IP...\n')
 
+    os.system('ping -b -c 1 %s | grep -E -B1 "[1-9][0-9]{1,3}\." | cut -d"(" -f2 | cut -d")" -f1 | sed -n "1p" > temp/ip' %ip_address)
+    ip_file = open('temp/ip', 'r')
+    ip_end = ip_file.read()
+    ip_file.close()
+    
+    print('IP/DNS: ' + ip_end)
+
     handler = ipinfo.getHandler(access_token)
-    details = handler.getDetails(ip_address)
+    details = handler.getDetails(ip_end)
 
     os.system('clear')
 
