@@ -25,4 +25,4 @@ And then just run the program with this:
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GPL]
