@@ -23,6 +23,18 @@ And then just run the program with this:
 
 ## Screenshots
 
+![](src/screen01.png)
+
+#EN-US:
+
+![](src/screen02.png)
+![](src/screen03.png)
+
+#PT-BR:
+
+![](src/screen04.png)
+![](src/screen05.png)
+
 ## License
 
 [GPL]
