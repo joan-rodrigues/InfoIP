@@ -25,12 +25,12 @@ And then just run the program with this:
 
 ![](src/screen01.png)
 
-#EN-US:
+# EN-US:
 
 ![](src/screen02.png)
 ![](src/screen03.png)
 
-#PT-BR:
+# PT-BR:
 
 ![](src/screen04.png)
 ![](src/screen05.png)
